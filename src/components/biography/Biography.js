@@ -10,7 +10,6 @@ const Biography = () => {
 					<h1 align="center">Biography</h1>
 				</Fade>
 				<Divider/>
-
 				<div className="highlight_description">
 					<p><span style={{color: '#fda20f'}}>Anthony Fink</span> was born in 1985 in the western part of Siberia. Since young age he's in love with electronic beats.</p>
 					<p>All childhood long he was dreaming of becoming a DJ and playing good music at parties around the world. Since the 6'th grade at school he organized school parties for his classmates playing Rave, Acid House and Techno.</p>
