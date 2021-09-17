@@ -11,18 +11,16 @@ const Gigs = () => {
 		<div className="bck_black">
 			<Container>
 				<Grid
-					container
-					direction="row"
-					justifyContent="center"
-					alignItems="center"
+					// container
+					// direction="row"
+					//
+					// // alignItems="center"
 					sx={{ justifyContent: 'center',alignItems:'center' }}
 					style={{paddingTop:'200px', paddingBottom:'100px'}}
 				>
 
 					<Grid
 						item
-						justifyContent="center"
-						alignItems="center"
 						md={6}>
 							<Zoom className="vn_item" triggerOnce>
 								<div>
@@ -49,8 +47,7 @@ const Gigs = () => {
 
 					<Grid
 						item
-						justifyContent="center"
-						alignItems="center"
+
 						md={6}>
 						<Zoom className="vn_item" delay={500}>
 							<div>

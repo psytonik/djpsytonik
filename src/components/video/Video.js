@@ -28,9 +28,10 @@ const Video = () => {
 				<h1 align="center" style={{marginTop: 0, paddingTop: 25, color: '#000'}}>Videos</h1>
 				{youtubeLinks.map((youtube,index)=>(
 					<Box
+						key={index}
 						sx={{boxShadow: 3}}
 					>
-						<Grid key={index}>
+						<Grid >
 							<div>{youtube.videoName}</div>
 							<YouTube videoId={youtube.videoId} opts={opts} onReady={_onReady} />
 						</Grid>
