@@ -15,9 +15,10 @@ import psytonik8 from '../../resources/images/psytonik8.jpg'
 const Carousel = () => {
 	const settings = {
 		dots: false,
+		lazyLoad: true,
 		infinite: true,
 		autoplay:true,
-		speed: 500,
+		speed: 400,
 	};
 
 	return (

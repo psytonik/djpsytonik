@@ -44,7 +44,7 @@ const Music = () => {
 	return (
 		<div style={{background: 'black', color: "#fda20f"}}>
 			<Container>
-				<h2 align="center" style={{marginTop: 0, paddingTop: 25, color: '#fff'}}>Music / Mixes</h2>
+				<h1 align="center" style={{marginTop: 0, paddingTop: 25, color: '#fff'}}>Music / Mixes</h1>
 				{musicLinks.map((link, index) => {
 					return (
 						<Grid container columns={{ sm: 2, md: 6 }} key={index}>

@@ -8,11 +8,13 @@ import Biography from "./components/biography/Biography.js";
 import Gigs from "./components/gigs/Gigs.js";
 import Footer from "./components/header_footer/Footer.js";
 import MusicLinks from "./components/music/MusicLinks.js";
+import Video from "./components/video/Video.js";
 
 const App = () => {
   return (
     <React.Fragment>
         <Header/>
+
         <>
             <Featured />
         </>
@@ -24,6 +26,9 @@ const App = () => {
         </>
         <>
             <MusicLinks/>
+        </>
+        <>
+            <Video/>
         </>
 
         <Footer/>
