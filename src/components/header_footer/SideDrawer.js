@@ -1,4 +1,4 @@
-import {Drawer,List,ListItem} from "@material-ui/core";
+import {Drawer,List,ListItem} from "@mui/material";
 import React from 'react';
 import {scroller} from 'react-scroll'
 const SideDrawer = (props) => {

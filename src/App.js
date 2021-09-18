@@ -30,6 +30,7 @@ const App = () => {
         </Element>
 
             <Suspense fallback={<Fragment>Loading...</Fragment>}>
+
                 <Element name="music">
                     <MusicLinks/>
                 </Element>
@@ -37,6 +38,7 @@ const App = () => {
                 <Element name="video">
                     <Video/>
                 </Element>
+
             </Suspense>
 
         <Element name="contacts">

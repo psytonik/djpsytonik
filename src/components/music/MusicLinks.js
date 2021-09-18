@@ -1,4 +1,4 @@
-import { Container, Grid } from "@material-ui/core";
+import { Container, Grid } from "@mui/material";
 import React from 'react';
 
 const Music = () => {
@@ -47,12 +47,15 @@ const Music = () => {
 				<h1 align="center" style={{marginTop: 0, paddingTop: 25, color: '#fff'}}>Music / Mixes</h1>
 				{musicLinks.map((link, index) => {
 					return (
-						<Grid container columns={{ sm: 2, md: 6 }} key={index}>
-								<h3>{link.mixName}</h3>
-								<iframe width="100%" height="120"
-								        title={index}
-								        src={link.mixLink}
-								        frameBorder="0"/>
+						<Grid container key={index}>
+								<Grid item xs={12}>
+									<h3>{link.mixName}</h3>
+										<iframe width="100%"
+										        title={index}
+										        id="mixcloud-iframe"
+										        src={link.mixLink}
+										        frameBorder="0"/>
+								</Grid>
 						</Grid>
 					)
 				})}

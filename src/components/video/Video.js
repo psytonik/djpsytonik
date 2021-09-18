@@ -1,6 +1,5 @@
 import React from 'react';
-import { Container,Grid,Box } from "@material-ui/core";
-import YouTube from 'react-youtube';
+import { Container,Grid } from "@mui/material";
 
 const Video = () => {
 	const youtubeLinks = [
@@ -10,32 +9,18 @@ const Video = () => {
 		{videoName:'Purim Moksha 2017',videoId:'-Gq8AQgUX18'},
 		{videoName:'Palmachim Beach 2016',videoId:'_2l7QkBa1j8'}
 	]
-	const opts = {
-		width: '50%',
-		playerVars: {
-			// https://developers.google.com/youtube/player_parameters
-			autoplay: 1,
-		},
-	};
-	const _onReady = (event) => {
-		// access to player in all event handlers via event.target
-		event.target.pauseVideo();
-	}
 	return (
 		<div style={{background: '#fda20f'}}>
 			<Container>
-
 				<h1 align="center" style={{marginTop: 0, paddingTop: 25, color: '#000'}}>Videos</h1>
 				{youtubeLinks.map((youtube,index)=>(
-					<Box
-						key={index}
-						sx={{boxShadow: 3}}
-					>
-						<Grid >
+						<Grid key={index}>
 							<div>{youtube.videoName}</div>
-							<YouTube videoId={youtube.videoId} opts={opts} onReady={_onReady} />
+							<iframe id="player"
+							        title={youtube.videoName}
+							        src={`https://www.youtube.com/embed/${youtube.videoId}?enablejsapi=1&origin=https://psytonik.dj`}
+							        frameBorder="0"/>
 						</Grid>
-					</Box>
 				))}
 			</Container>
 		</div>

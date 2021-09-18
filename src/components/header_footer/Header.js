@@ -1,6 +1,8 @@
+import {AppBar, IconButton, Toolbar} from "@mui/material";
+import MenuRoundedIcon from '@mui/icons-material/MenuRounded';
+
 import React, {useEffect,useState} from 'react';
-import {AppBar, IconButton, Toolbar} from "@material-ui/core";
-import MenuIcon from '@material-ui/icons/Menu.js'
+
 import SideDrawer from "./SideDrawer.js";
 import psytonikLogo from '../../resources/images/psytonikLogoEdited.png'
 const Header = () => {
@@ -35,7 +37,7 @@ const Header = () => {
 					<div className="header_logo_title" style={{paddingLeft:'8px'}}>Your Musical Butcher</div>
 				</div>
 				<IconButton  color="inherit" aria-label="menu" onClick={()=>toggleDrawer(true)}>
-					<MenuIcon />
+					<MenuRoundedIcon />
 				</IconButton>
 				<SideDrawer open={drawerOpen} onClose={()=>toggleDrawer(false)}/>
 			</Toolbar>

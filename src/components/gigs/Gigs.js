@@ -1,5 +1,6 @@
-import {Container, Grid} from "@material-ui/core";
 
+
+import {Container, Grid} from "@mui/material";
 import React from 'react';
 import {Zoom} from "react-awesome-reveal";
 
@@ -10,15 +11,12 @@ const Gigs = () => {
 	return (
 		<div className="bck_black">
 			<Container>
+				<h1 align="center" style={{marginTop: 0, paddingTop: 25, color: '#fff'}}>Next Show</h1>
 				<Grid
-					// container
-					// direction="row"
-					//
-					// // alignItems="center"
+					container
 					sx={{ justifyContent: 'center',alignItems:'center' }}
-					style={{paddingTop:'200px', paddingBottom:'100px'}}
+					style={{paddingTop:'100px', paddingBottom:'100px'}}
 				>
-
 					<Grid
 						item
 						md={6}>
@@ -37,7 +35,7 @@ const Gigs = () => {
 												Event Date & Time
 											</div>
 											<div className="vn_desc">
-												20.November.2021 - 01:30
+												20.November.2021
 											</div>
 										</div>
 									</div>
@@ -47,9 +45,8 @@ const Gigs = () => {
 
 					<Grid
 						item
-
 						md={6}>
-						<Zoom className="vn_item" delay={500}>
+						<Zoom className="vn_item" delay={500} >
 							<div>
 								<div className="vn_outer">
 									<div className="vn_inner">
@@ -64,7 +61,7 @@ const Gigs = () => {
 											Event Location
 										</div>
 										<div className="vn_desc">
-											Tel Aviv, Gagarin Club
+											Tel Aviv, Gagarin
 										</div>
 
 									</div>
