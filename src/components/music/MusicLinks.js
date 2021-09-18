@@ -52,7 +52,8 @@ const Music = () => {
 									<h3>{link.mixName}</h3>
 										<iframe width="100%"
 										        title={index}
-										        id="mixcloud-iframe"
+										        id={index}
+										        className="mixcloud-iframe"
 										        src={link.mixLink}
 										        frameBorder="0"/>
 								</Grid>
