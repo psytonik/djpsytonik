@@ -20,7 +20,6 @@ import MailOutlineOutlinedIcon from '@mui/icons-material/MailOutlineOutlined';co
 					<Grid
 						item
 						md={6}
-
 					>
 						<Box sx={{ display: 'flex', gridTemplateRows: 'repeat(2, 1fr)' }}>
 							<a href="tel:+972-54-5249-433"><PhoneAndroidRoundedIcon color="secondary" sx={{ fontSize: 50,alignItems:"center" }}/></a>
