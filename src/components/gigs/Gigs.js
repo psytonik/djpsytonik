@@ -19,8 +19,11 @@ const Gigs = () => {
 				>
 					<Grid
 						item
+						sx={{ justifyContent: 'center',alignItems:'center' }}
 						md={6}>
-							<Zoom className="vn_item" triggerOnce>
+							<Zoom
+								className="vn_item"
+								triggerOnce>
 								<div>
 									<div className="vn_outer">
 										<div className="vn_inner">
@@ -45,8 +48,9 @@ const Gigs = () => {
 
 					<Grid
 						item
+						sx={{ justifyContent: 'center',alignItems:'center' }}
 						md={6}>
-						<Zoom className="vn_item" delay={500} >
+							<Zoom className="vn_item" delay={500} >
 							<div>
 								<div className="vn_outer">
 									<div className="vn_inner">
