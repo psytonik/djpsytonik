@@ -13,15 +13,20 @@ const Video = () => {
 		<div style={{background: '#fda20f'}}>
 			<Container>
 				<h1 align="center" style={{marginTop: 0, paddingTop: 25, color: '#000'}}>Videos</h1>
-				{youtubeLinks.map((youtube,index)=>(
-						<Grid key={index}>
-							<div>{youtube.videoName}</div>
-							<iframe id="player"
-							        title={youtube.videoName}
-							        src={`https://www.youtube.com/embed/${youtube.videoId}?enablejsapi=1&origin=https://psytonik.dj`}
-							        frameBorder="0"/>
-						</Grid>
-				))}
+					<Grid container>
+						{youtubeLinks.map((youtube,index)=>(
+							<Grid
+								key={index}
+								sx={{ justifyContent: 'center',alignItems:'center' }}
+								item md={6}>
+								<div>{youtube.videoName}</div>
+								<iframe id="player"
+								        title={youtube.videoName}
+								        src={`https://www.youtube.com/embed/${youtube.videoId}?enablejsapi=1&origin=https://psytonik.dj`}
+								        frameBorder="0"/>
+							</Grid>
+						))}
+					</Grid>
 			</Container>
 		</div>
 	);
