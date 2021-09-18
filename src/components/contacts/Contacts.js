@@ -21,11 +21,12 @@ import MailOutlineOutlinedIcon from '@mui/icons-material/MailOutlineOutlined';co
 						item
 						md={6}
 					>
+
 						<Box sx={{ display: 'flex', gridTemplateRows: 'repeat(2, 1fr)' }}>
 							<a href="tel:+972-54-5249-433"><PhoneAndroidRoundedIcon color="secondary" sx={{ fontSize: 50,alignItems:"center" }}/></a>
 							<b align="center" style={{color:'#fff',fontSize:'20px'}}>+(972)-54-5249-433</b>
 
-							<a href="mail:djpsytonik@gmail.com"><MailOutlineOutlinedIcon color="secondary" sx={{ fontSize: 50,alignItems:"center" }}/></a>
+							<a href="mailto:djpsytonik@gmail.com"><MailOutlineOutlinedIcon color="secondary" sx={{ fontSize: 50,alignItems:"center" }}/></a>
 							<b align="center" style={{color:'#fff',fontSize:'20px',marginBottom:'15px'}}>djpsytonik@gmail.com</b>
 						</Box>
 					</Grid>
