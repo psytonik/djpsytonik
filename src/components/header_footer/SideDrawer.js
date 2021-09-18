@@ -1,9 +1,9 @@
 import {Drawer,List,ListItem} from "@material-ui/core";
 import React from 'react';
-
+import {scroller} from 'react-scroll'
 const SideDrawer = (props) => {
 	const links = [
-		{where:'featured',value:'To Top'},
+		{where:'featured',value:'Featured'},
 		{where:'biography',value:'Biography'},
 		{where:'gigs',value:'Gigs'},
 		{where:'music',value:'Music'},
@@ -11,9 +11,18 @@ const SideDrawer = (props) => {
 		{where:'contacts',value:'Contacts'},
 	]
 
+	const scrollToElement = (element) => {
+		scroller.scrollTo(element,{
+			duration: 1500,
+			delay:100,
+			smooth:true,
+			offset:-96
+		});
+		props.onClose(false)
+	}
 	const renderItem = (item) => {
 		return (
-			<ListItem button onClick={()=>alert(item.where)} key={item.where}>
+			<ListItem button onClick={()=>scrollToElement(item.where)} key={item.where}>
 				{item.value}
 			</ListItem>
 		)
