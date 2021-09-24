@@ -48,11 +48,12 @@ const Music = () => {
 				<Fade>
 					<h1 align="center" style={{marginTop: 0, paddingTop: 25, color: '#fff'}}>Music / Mixes</h1>
 				</Fade>
+				<Row>
 				{musicLinks.map((link, index) => {
 					return (
-						<Row>
 							<Col
 								key={index}
+								md={6}
 							>
 									<h3 align="center">{link.mixName}</h3>
 									<iframe width="100%"
@@ -62,11 +63,10 @@ const Music = () => {
 									        src={link.mixLink}
 									        frameBorder="0"/>
 							</Col>
-						</Row>
-
 					)
 				})}
-				<p style={{marginBottom: 0, paddingBottom: 25}}>more music on <a
+				</Row>
+					<p style={{marginBottom: 0, paddingBottom: 25}}>more music on <a
 					href="https://www.mixcloud.com/Dj_PsyToniK/" target="_blank" rel="noreferrer">MixCloud</a></p>
 			</Container>
 		</div>
