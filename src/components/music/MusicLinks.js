@@ -1,5 +1,6 @@
-import { Container, Grid } from "@mui/material";
 import React from 'react';
+import {Fade} from "react-awesome-reveal";
+import {Row,Col,Container} from "react-bootstrap";
 
 const Music = () => {
 	const musicLinks = [
@@ -44,20 +45,25 @@ const Music = () => {
 	return (
 		<div style={{background: 'black', color: "#fda20f"}}>
 			<Container>
-				<h1 align="center" style={{marginTop: 0, paddingTop: 25, color: '#fff'}}>Music / Mixes</h1>
+				<Fade>
+					<h1 align="center" style={{marginTop: 0, paddingTop: 25, color: '#fff'}}>Music / Mixes</h1>
+				</Fade>
 				{musicLinks.map((link, index) => {
 					return (
-						<Grid container key={index}>
-								<Grid item xs={12}>
-									<h3>{link.mixName}</h3>
-										<iframe width="100%"
-										        title={index}
-										        id={index}
-										        className="mixcloud-iframe"
-										        src={link.mixLink}
-										        frameBorder="0"/>
-								</Grid>
-						</Grid>
+						<Row>
+							<Col
+								key={index}
+							>
+									<h3 align="center">{link.mixName}</h3>
+									<iframe width="100%"
+									        title={index}
+									        id={index}
+									        className="mixcloud-iframe"
+									        src={link.mixLink}
+									        frameBorder="0"/>
+							</Col>
+						</Row>
+
 					)
 				})}
 				<p style={{marginBottom: 0, paddingBottom: 25}}>more music on <a

@@ -1,5 +1,6 @@
 import React from 'react';
-import { Container,Grid } from "@mui/material";
+import {Fade} from "react-awesome-reveal";
+import {Row, Container, Col} from "react-bootstrap";
 
 const Video = () => {
 	const youtubeLinks = [
@@ -12,21 +13,26 @@ const Video = () => {
 	return (
 		<div style={{background: '#fda20f'}}>
 			<Container>
-				<h1 align="center" style={{marginTop: 0, paddingTop: 25, color: '#000'}}>Videos</h1>
-					<Grid container>
-						{youtubeLinks.map((youtube,index)=>(
-							<Grid
-								key={index}
-								sx={{ justifyContent: 'center',alignItems:'center' }}
-								item md={6}>
-								<div>{youtube.videoName}</div>
-								<iframe id="player"
-								        title={youtube.videoName}
-								        src={`https://www.youtube.com/embed/${youtube.videoId}?enablejsapi=1&origin=https://psytonik.dj`}
-								        frameBorder="0"/>
-							</Grid>
-						))}
-					</Grid>
+				<Fade>
+					<h1 align="center" style={{marginTop: 0, paddingTop: 25, color: '#fff'}}>Video</h1>
+				</Fade>
+				<Row
+					style={{marginBottom:0,paddingBottom:25}}
+				>
+					{youtubeLinks.map((youtube,index)=>(
+						<Col
+							key={index}
+							md={6}>
+							<h3 align="center">{youtube.videoName}</h3>
+							<iframe id={index}
+							        width="100%"
+							        height="350px"
+							        title={youtube.videoName}
+							        src={`https://www.youtube.com/embed/${youtube.videoId}?enablejsapi=1&origin=https://psytonik.dj`}
+							        frameBorder="0"/>
+						</Col>
+					))}
+				</Row>
 			</Container>
 		</div>
 	);

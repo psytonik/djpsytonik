@@ -8,7 +8,7 @@ const Biography = () => {
 		<div className="highlight_wrapper">
 			<Container>
 				<Fade>
-					<h1 align="center">Biography</h1>
+					<h1 align="center" style={{paddingTop:"25px",paddingBottom:'25px'}}>Biography</h1>
 				</Fade>
 				<Divider/>
 				<div className="highlight_description">

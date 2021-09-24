@@ -14,21 +14,20 @@ const Video = React.lazy( () => import("./components/video/Video.js") );
 
 const App = () => {
   return (
+        <React.Fragment>
+            <Header/>
 
-    <React.Fragment>
-        <Header/>
+            <Element name="featured">
+                <Featured />
+            </Element>
 
-        <Element name="featured">
-            <Featured />
-        </Element>
+            <Element name="biography">
+                <Biography />
+            </Element>
 
-        <Element name="biography">
-            <Biography />
-        </Element>
-
-        <Element name="gigs">
-            <Gigs />
-        </Element>
+            <Element name="gigs">
+                <Gigs />
+            </Element>
 
             <Suspense fallback={<Fragment>Loading...</Fragment>}>
 
@@ -42,12 +41,12 @@ const App = () => {
 
             </Suspense>
 
-        <Element name="contacts">
-            <Contacts />
-        </Element>
+            <Element name="contacts">
+                <Contacts />
+            </Element>
 
-        <Footer/>
-    </React.Fragment>
+            <Footer/>
+        </React.Fragment>
   );
 }
 
