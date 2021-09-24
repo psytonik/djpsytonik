@@ -1,5 +1,4 @@
 import React from 'react';
-import {Image} from "react-bootstrap";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -11,7 +10,7 @@ import psytonik4 from '../../resources/images/psytonik4.jpg'
 import psytonik5 from '../../resources/images/psytonik5.jpg'
 import psytonik6 from '../../resources/images/psytonik6.jpg'
 import psytonik7 from '../../resources/images/psytonik7.jpg'
-// import psytonik8 from '../../resources/images/psytonik8.jpg'
+
 
 const Carousel = () => {
 	const settings = {
@@ -26,86 +25,59 @@ const Carousel = () => {
 		<div
 
 			className="carrousel_wrapper"
-			// style={{height:`${window.innerHeight}px`}}
 		>
 			<Slider {...settings}>
 				<div>
-					<Image src={psytonik1} fluid className="carrousel_image">
-
-					</Image>
-					{/*<div*/}
-					{/*	className="carrousel_image"*/}
-					{/*	style={{*/}
-					{/*		background:`url(${psytonik1})`,*/}
-					{/*		height:`${window.innerHeight}px`}}*/}
-					{/*>*/}
-
-					{/*</div>*/}
+					<div
+						className="carrousel_image"
+						style={{
+							background:`url(${psytonik1})`
+						}}
+					>
+					</div>
 				</div>
 				<div>
-					<Image src={psytonik2} fluid >
+					<div
+						className="carrousel_image"
+						style={{background:`url(${psytonik2})`}}
+					>
 
-					</Image>
-					{/*<div*/}
-					{/*	className="carrousel_image"*/}
-					{/*	style={{background:`url(${psytonik2})`, height:`${window.innerHeight}px`}}*/}
-					{/*>*/}
-
-					{/*</div>*/}
+					</div>
 				</div>
 				<div>
-					<Image src={psytonik3} fluid >
-
-					</Image>
-					{/*<div*/}
-					{/*	className="carrousel_image"*/}
-					{/*	style={{background:`url(${psytonik3})`, height:`${window.innerHeight}px`}}*/}
-					{/*>*/}
-					{/*</div>*/}
+					<div
+						className="carrousel_image"
+						style={{background:`url(${psytonik3})`}}
+					>
+					</div>
 				</div>
 				<div>
-					<Image src={psytonik4} fluid >
-
-					</Image>
-					{/*<div*/}
-					{/*	className="carrousel_image"*/}
-					{/*	style={{background:`url(${psytonik4})`, height:`${window.innerHeight}px`}}*/}
-					{/*>*/}
-
-					{/*</div>*/}
+					<div
+						className="carrousel_image"
+						style={{background:`url(${psytonik4})`}}
+					>
+					</div>
 				</div>
 				<div>
-					<Image src={psytonik5} fluid >
-
-					</Image>
-					{/*<div*/}
-					{/*	className="carrousel_image"*/}
-					{/*	style={{background:`url(${psytonik5})`, height:`${window.innerHeight}px`}}*/}
-					{/*>*/}
-
-					{/*</div>*/}
+					<div
+						className="carrousel_image"
+						style={{background:`url(${psytonik5})`}}
+					>
+					</div>
 				</div>
 				<div>
-					<Image src={psytonik6} fluid >
-
-					</Image>
-					{/*<div*/}
-					{/*	className="carrousel_image"*/}
-					{/*	style={{background:`url(${psytonik6})`, height:`${window.innerHeight}px`}}*/}
-					{/*>*/}
-
-					{/*</div>*/}
+					<div
+						className="carrousel_image"
+						style={{background:`url(${psytonik6})`}}
+					>
+					</div>
 				</div>
 				<div>
-					<Image src={psytonik7} fluid >
-
-					</Image>
-					{/*<div*/}
-					{/*	className="carrousel_image"*/}
-					{/*	style={{background:`url(${psytonik7})`, height:`${window.innerHeight}px`}}*/}
-					{/*>*/}
-
-					{/*</div>*/}
+					<div
+						className="carrousel_image"
+						style={{background:`url(${psytonik7})`}}
+					>
+					</div>
 				</div>
 			</Slider>
 		</div>
