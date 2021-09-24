@@ -86,20 +86,19 @@ footer .footer_copyright {
 
 
 .carrousel_wrapper {
-    /*position: relative;*/
-    /*width: 100vw;*/
-    /*height:100vh;*/
-    /*display: flex;*/
+    position: relative;
+    width: 100vw;
+    height:100vh;
     overflow: hidden;
+    object-fit: cover;
 }
 
-.carrousel_image {
-
-    /*background-attachment: fixed;*/
-    /*background-position: center;*/
-    /*background-repeat: repeat;*/
-    background-size: cover !important;
-}
+/*.carrousel_image {*/
+/*    background-attachment: fixed;*/
+/*    background-position: center;*/
+/*    background-repeat: repeat;*/
+/*    background-size: cover !important;*/
+/*}*/
 
 .artist_name {
     position: absolute;
