@@ -1,6 +1,7 @@
 import React from 'react';
 import {Fade} from "react-awesome-reveal";
 import {Row,Col,Container} from "react-bootstrap";
+import {Slide} from "react-awesome-reveal";
 
 const Music = () => {
 	const musicLinks = [
@@ -49,22 +50,27 @@ const Music = () => {
 					<h1 align="center" style={{marginTop: 0, paddingTop: 25, color: '#fff'}}>Music / Mixes</h1>
 				</Fade>
 				<Row>
-				{musicLinks.map((link, index) => {
-					return (
-							<Col
-								key={index}
-								md={6}
-							>
-									<h3 align="center">{link.mixName}</h3>
-									<iframe width="100%"
-									        title={index}
-									        id={index}
-									        className="mixcloud-iframe"
-									        src={link.mixLink}
-									        frameBorder="0"/>
-							</Col>
-					)
-				})}
+
+
+					{musicLinks.map((link, index) => {
+							return (
+								<Col
+									key={index}
+									md={6}
+								>
+									<Slide>
+										<h3 align="center">{link.mixName}</h3>
+										<iframe width="100%"
+										        title={index}
+										        id={index}
+										        className="mixcloud-iframe"
+										        src={link.mixLink}
+										        frameBorder="0"/>
+									</Slide>
+								</Col>
+							)
+						})}
+
 				</Row>
 					<p style={{marginBottom: 0, paddingBottom: 25}}>more music on <a
 					href="https://www.mixcloud.com/Dj_PsyToniK/" target="_blank" rel="noreferrer">MixCloud</a></p>

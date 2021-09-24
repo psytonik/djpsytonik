@@ -68,7 +68,7 @@ footer {
 }
 
 footer .footer_copyright {
-    font-size: 18px;
+    font-size: 16px;
 }
 
 /*====================
@@ -79,6 +79,7 @@ footer .footer_copyright {
 .carrousel_wrapper {
     height:100vh;
     overflow: hidden;
+    /*position: relative;*/
 }
 
 .carrousel_image {

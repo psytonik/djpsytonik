@@ -46,9 +46,9 @@ const TimeUntil = () => {
 					</div>
 					<div className="countdown_bottom">
 						{renderItem(time.days,'Days')}
-						{renderItem(time.hours,'Hours')}
-						{renderItem(time.minutes,'Minutes')}
-						{renderItem(time.seconds,'Seconds')}
+						{renderItem(time.hours,'Hs')}
+						{renderItem(time.minutes,'Min')}
+						{renderItem(time.seconds,'Sec')}
 					</div>
 				</div>
 			</Slide>
