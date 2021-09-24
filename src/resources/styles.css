@@ -5,15 +5,6 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-/*.app {*/
-/*    height:"1500px";*/
-/*    background:'cornflowerblue';*/
-/*}*/
-
-/*.featured_container {*/
-/*    position: "center"*/
-/*}*/
-
 .font_righteous {
     font-family: 'Righteous', cursive;
 }
@@ -86,17 +77,13 @@ footer .footer_copyright {
 
 
 .carrousel_wrapper {
-    position: relative;
     height:100vh;
     overflow: hidden;
-    object-fit: cover;
 }
 
 .carrousel_image {
     height:100vh;
-    position: relative;
-    overflow: hidden;
-    background-size: cover;
+    background-size: cover !important;
 }
 
 /*====================
