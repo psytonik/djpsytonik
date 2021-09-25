@@ -58,7 +58,7 @@ const Music = () => {
 									key={index}
 									md={6}
 								>
-									<Slide>
+									<Slide left>
 										<h3 align="center">{link.mixName}</h3>
 										<iframe width="100%"
 										        title={index}
