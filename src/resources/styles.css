@@ -79,7 +79,8 @@ footer .footer_copyright {
 .carrousel_wrapper {
     height:100vh;
     overflow: hidden;
-    /*position: relative;*/
+    position: relative;
+
 }
 
 .carrousel_image {
@@ -87,6 +88,18 @@ footer .footer_copyright {
     background-size: cover !important;
 }
 
+@media screen and (max-width: 400px) {
+    .carrousel_wrapper {
+        height:50vh;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .carrousel_image {
+        object-fit: cover;
+        height: 50vh;
+    }
+}
 /*====================
         COUNTDOWN
 ======================*/
@@ -126,7 +139,11 @@ footer .footer_copyright {
     font-size: 20px;
     padding-left: 7px;
 }
-
+@media screen and (max-width: 400px) {
+    .countdown_wrapper .countdown_time {
+        font-size: 20px;
+    }
+}
 /*====================
         VENUE NFO
 ======================*/

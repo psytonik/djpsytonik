@@ -31,7 +31,7 @@ const Carousel = () => {
 					<div
 						className="carrousel_image"
 						style={{
-							background:`url(${psytonik1})`
+							background:`url(${psytonik1}) no-repeat center center`
 						}}
 					>
 					</div>
@@ -39,7 +39,7 @@ const Carousel = () => {
 				<div>
 					<div
 						className="carrousel_image"
-						style={{background:`url(${psytonik2})`}}
+						style={{background:`url(${psytonik2}) no-repeat center center`}}
 					>
 
 					</div>
@@ -47,35 +47,35 @@ const Carousel = () => {
 				<div>
 					<div
 						className="carrousel_image"
-						style={{background:`url(${psytonik3})`}}
+						style={{background:`url(${psytonik3}) no-repeat center center`}}
 					>
 					</div>
 				</div>
 				<div>
 					<div
 						className="carrousel_image"
-						style={{background:`url(${psytonik4})`}}
+						style={{background:`url(${psytonik4}) no-repeat center center`}}
 					>
 					</div>
 				</div>
 				<div>
 					<div
 						className="carrousel_image"
-						style={{background:`url(${psytonik5})`}}
+						style={{background:`url(${psytonik5}) no-repeat center center`}}
 					>
 					</div>
 				</div>
 				<div>
 					<div
 						className="carrousel_image"
-						style={{background:`url(${psytonik6})`}}
+						style={{background:`url(${psytonik6}) no-repeat center center`}}
 					>
 					</div>
 				</div>
 				<div>
 					<div
 						className="carrousel_image"
-						style={{background:`url(${psytonik7})`}}
+						style={{background:`url(${psytonik7}) no-repeat center center`}}
 					>
 					</div>
 				</div>
